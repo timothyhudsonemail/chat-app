@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  height: 600px;
+}
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}  
