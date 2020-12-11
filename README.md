@@ -10,3 +10,5 @@ The application can be visited here: https://chat-app.timothyhudsonemail.vercel.
 
 Built full stack application from scratch using React, Express, and PSQL.
 Deployed via Heroku (server) and Vercel
+
+Artwork by Tim Hudson
