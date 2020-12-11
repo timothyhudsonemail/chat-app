@@ -1,8 +1,8 @@
 # Chat Application
 
-This project is a full stack chat application consisting of a client (this repository), a server, and a database, which facilitate online conversation between 2 users
+This project is a full stack chat application consisting of a client (this repository), a server, and a database, which facilitate online conversation between 2 remote users. 
 
-## Deployment
+## Live Deployment
 
 The application can be visited here: https://chat-app.timothyhudsonemail.vercel.app/
 
