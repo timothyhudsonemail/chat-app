@@ -98,7 +98,7 @@ export default class App extends Component {
     .then(
       (result) => {
         this.setState(
-        {msg4: result[0].msg}
+        {msg4: result[0].msg2}
         )
       })
       setTimeout(this.autoUpdateMsg2, 3000)
