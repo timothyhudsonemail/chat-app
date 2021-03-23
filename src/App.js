@@ -117,14 +117,14 @@ export default class App extends Component {
       <div className="App">
         <br />
         <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-1.png" 
-          style={{height: 250}}
+          style={{height: 160}}
           alt="abstract art" />
         <br />
 
         <div className='flex-container'>
           <div className='flex-child'>
            <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-2.png" 
-            style={{height: 200}}
+            style={{height: 120}}
             alt="illustration of user 1" />
             <form onSubmit={this.sendMsg1}>
               <label>
@@ -140,7 +140,7 @@ export default class App extends Component {
 
          <div className='flex-child'>
             <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-3.png" 
-            style={{height: 200}}
+            style={{height: 120}}
             alt="illustration of user 2" />
             <form onSubmit={this.sendMsg2}>
               <label>
