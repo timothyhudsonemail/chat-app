@@ -21,7 +21,7 @@ export default class App extends Component {
   sendMsg1 = (e) => {
     e.preventDefault()
     
-    fetch("https://kill-me-6.herokuapp.com/b", {
+    fetch("https://server-v1-2021.herokuapp.com/msg1", {
       method: 'PATCH',
       body: JSON.stringify({
         "id": "1",
@@ -33,7 +33,7 @@ export default class App extends Component {
       }
     })
     .then(() => {
-      fetch("https://kill-me-6.herokuapp.com/b")
+      fetch("https://server-v1-2021.herokuapp.com/a")
       .then(res => res.json())
       .then(
         (result) => {
@@ -51,7 +51,7 @@ export default class App extends Component {
 
   sendMsg2 = (e) => {
     e.preventDefault()
-    fetch("https://kill-me-6.herokuapp.com/c", {
+    fetch("https://server-v1-2021.herokuapp.com/msg2", {
       method: 'PATCH',
       body: JSON.stringify({
         "id": "2",
@@ -63,7 +63,7 @@ export default class App extends Component {
       }
     })
     .then(() => {
-      fetch("https://kill-me-6.herokuapp.com/c")
+      fetch("https://server-v1-2021.herokuapp.com/a")
       .then(res => res.json())
       .then(
         (result) => {
@@ -81,7 +81,7 @@ export default class App extends Component {
   }
 
   autoUpdateMsg1 = () => {
-    fetch("https://kill-me-6.herokuapp.com/b")
+    fetch("https://server-v1-2021.herokuapp.com/a")
     .then(res => res.json())
     .then(
       (result) => {
@@ -93,7 +93,7 @@ export default class App extends Component {
   }
 
   autoUpdateMsg2 = () => {
-    fetch("https://kill-me-6.herokuapp.com/c")
+    fetch("https://server-v1-2021.herokuapp.com/a")
     .then(res => res.json())
     .then(
       (result) => {
