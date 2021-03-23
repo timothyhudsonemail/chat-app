@@ -22,7 +22,7 @@ export default class App extends Component {
     e.preventDefault()
     
     fetch("https://server-v1-2021.herokuapp.com/msg1", {
-      
+      method: 'patch',
       body: JSON.stringify({
         "id": "1",
         "msg": this.state.msg1
@@ -52,7 +52,7 @@ export default class App extends Component {
   sendMsg2 = (e) => {
     e.preventDefault()
     fetch("https://server-v1-2021.herokuapp.com/msg2", {
-      
+      method: 'patch',
       body: JSON.stringify({
         "id": "2",
         "msg": this.state.msg2
