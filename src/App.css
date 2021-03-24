@@ -6,8 +6,10 @@
 
 @font-face {
 font-family: "Avaraa";
-src: url("fonts/Avara-Black.otf");
+src: url("fonts/MarkaziText-VariableFont_wght.ttf");
 }
+
+
 
 .flex-container {
   display: flex;
