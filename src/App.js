@@ -133,7 +133,7 @@ export default class App extends Component {
             <form onSubmit={this.sendMsg1}>
               <label>
                 user 1:
-                <input style={{fontSize:200}}
+                <input style={{fontSize:33}}
                 onChange={this.msg1Handler} 
                 value={this.state.msg1} 
                 placeholder='enter msg here' />
@@ -150,7 +150,8 @@ export default class App extends Component {
             <form onSubmit={this.sendMsg2}>
               <label>
                 user 2:
-                <input onChange={this.msg2Handler} 
+                <input style={{fontSize:33}}
+                onChange={this.msg2Handler} 
                 value={this.state.msg2} 
                 placeholder='enter msg here' />
               </label>
