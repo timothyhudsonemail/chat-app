@@ -123,6 +123,10 @@ export default class App extends Component {
           style={{height: 160}}
           alt="abstract art" />
         <br />
+      <p style={{color:"rgb(255, 51, 153)",fontFamily:"Avaraa"}}>
+      welcome! this is a full stack chat application which facilitates communication between 2 remote users. conversation persists between page-reloads. <br />
+      technical info: this application is built using react. front end hosted on vercel (deployed via github), server built from scratch and hosted on heroku. psql database hosted on aws s3.
+      </p>
 
         <div className='flex-container'>
           <div className='flex-child'>
@@ -133,7 +137,7 @@ export default class App extends Component {
             <form 
       onSubmit={this.sendMsg1}>
               <label>
-                msg:
+                
                 <input
                 onChange={this.msg1Handler} 
                 value={this.state.msg1} 
@@ -151,7 +155,7 @@ export default class App extends Component {
             <form 
       onSubmit={this.sendMsg2}>
               <label>
-                msg:
+                
                 <input
                 onChange={this.msg2Handler} 
                 value={this.state.msg2} 
@@ -164,13 +168,17 @@ export default class App extends Component {
 
         <div className='flex-container'>
           <div className='flex-child'>
+      <br />
             <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>message from user 1:</p>
-            <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'msg1 will appear here'}</h2>
+      <br />      
+      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'msg1 will appear here'}</h2>
           </div>
 
           <div className='flex-child'> 
-            <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>message from user 2:</p>
-            <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'msg2 will appear here'}</h2>
+      <br />      
+      <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>message from user 2:</p>
+      <br />      
+      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'msg2 will appear here'}</h2>
           </div>
         </div>
       </div>
