@@ -190,7 +190,7 @@ export default class App extends Component {
       
           </div>
         </div>
-      <div style={{paddingBottom:"400px"}}>
+      <div style={{paddingBottom:"200px"}}>
         </div>
       </div>
       );
