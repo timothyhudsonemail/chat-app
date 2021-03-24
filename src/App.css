@@ -7,6 +7,7 @@
 @font-face {
 font-family: "Avaraa";
 src: url("fonts/Avara-Black.otf");
+}
 
 .flex-container {
   display: flex;
