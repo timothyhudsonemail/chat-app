@@ -124,8 +124,8 @@ export default class App extends Component {
           alt="abstract art" />
         <br />
       <p style={{color:"rgb(255, 51, 153)",fontFamily:"Avaraa",paddingLeft:"90px",paddingRight:"90px"}}>
-      welcome! this is a full stack chat application which facilitates communication between 2 remote users. conversation persists between page reloads. <br />
-      technical info: this application is built using react. front end hosted on vercel (deployed via github), server built from scratch and hosted on heroku. psql database hosted on aws s3.
+      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. conversation persists between page reloads. <br /><br />
+      Technical info: this application is built using React. Front end hosted on Vercel (deployed via github), server built from scratch and hosted on Heroku. PSQL database hosted on aws s3.
       </p>
     <br />
     
@@ -133,7 +133,7 @@ export default class App extends Component {
 
         <div className='flex-container'>
           <div className='flex-child'>
-      <h3 style={{fontFamily:"Avaraa"}}>user 1</h3>
+      <h3 style={{fontFamily:"Avaraa"}}>User 1</h3>
            <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-2.png" 
             style={{height: 120}}
             alt="illustration of user 1" />
@@ -144,14 +144,14 @@ export default class App extends Component {
                 <input
                 onChange={this.msg1Handler} 
                 value={this.state.msg1} 
-                placeholder='enter msg here' />
+                placeholder='enter message here' />
               </label>
-              <input type="submit" value="send" />
+              <input type="submit" value="Send" />
             </form>
           </div>
 
          <div className='flex-child'>
-            <h3 style={{fontFamily:"Avaraa"}}>user 2</h3>
+            <h3 style={{fontFamily:"Avaraa"}}>User 2</h3>
             <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-3.png" 
             style={{height: 120}}
             alt="illustration of user 2" />
@@ -162,9 +162,9 @@ export default class App extends Component {
                 <input
                 onChange={this.msg2Handler} 
                 value={this.state.msg2} 
-                placeholder='enter msg here' />
+                placeholder='enter message here' />
               </label>
-              <input type="submit" value="send" />
+              <input type="submit" value="Send" />
             </form>
           </div>
         </div>
@@ -172,16 +172,16 @@ export default class App extends Component {
         <div className='flex-container'>
           <div className='flex-child'>
       <br />
-            <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>message from user 1:</p>
+            <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>Message from User 1:</p>
       <br />      
-      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'msg1 will appear here'}</h2>
+      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'Message 1 <br />will appear here'}</h2>
           </div>
 
           <div className='flex-child'> 
       <br />      
-      <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>message from user 2:</p>
+      <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)"}}>Message from User 2:</p>
       <br />      
-      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'msg2 will appear here'}</h2>
+      <h2 style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'Message 2 <br /> will appear here'}</h2>
           </div>
         </div>
       </div>
