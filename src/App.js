@@ -124,7 +124,7 @@ export default class App extends Component {
           alt="abstract art" />
         <br />
       <br />
-    
+    <div style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
       <p style={{color:"rgb(255, 51, 153)",
                  fontFamily:"Avaraa",
                  paddingLeft:"90px",
@@ -136,7 +136,7 @@ export default class App extends Component {
                  paddingRight:"90px"}}>
       Technical info: This application is built using React. Front end hosted on Vercel (deployed via github), server built from scratch and hosted on Heroku. PSQL database hosted on aws s3.
       </p>
-   
+   </div>
     <br />
     
      
