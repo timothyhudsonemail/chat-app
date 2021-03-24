@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(245,245,245);
-  height: 100vh;
+  background-size:cover;
 }
 
 @font-face {
