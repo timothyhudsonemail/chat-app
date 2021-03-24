@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: rgb(235, 235, 235);
-  height: 600px;
+  background: url("images/decay41.jpg");
+  background-size: cover;
 }
 
 @font-face {
