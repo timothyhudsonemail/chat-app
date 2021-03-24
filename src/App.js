@@ -128,7 +128,7 @@ export default class App extends Component {
                  fontFamily:"Avaraa",
                  paddingLeft:"90px",
                  paddingRight:"90px"}}>
-      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. conversation persists between page reloads. <br /><br />
+      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads. <br /><br />
       Technical info: This application is built using React. Front end hosted on Vercel (deployed via github), server built from scratch and hosted on Heroku. PSQL database hosted on aws s3.
       </p>
     <br />
