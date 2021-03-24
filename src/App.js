@@ -164,13 +164,13 @@ export default class App extends Component {
 
         <div className='flex-container'>
           <div className='flex-child'>
-            <p>message from user 1:</p>
-            <p>{this.state.msg3 ? this.state.msg3 :'msg1 will appear here'}</p>
+            <p style={{fontFamily:"Avaraa"}}>message from user 1:</p>
+            <p style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'msg1 will appear here'}</p>
           </div>
 
           <div className='flex-child'> 
-            <p>message from user 2:</p>
-            <p>{this.state.msg4 ? this.state.msg4 : 'msg2 will appear here'}</p>
+            <p style={{fontFamily:"Avaraa"}}>message from user 2:</p>
+            <p style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'msg2 will appear here'}</p>
           </div>
         </div>
       </div>
