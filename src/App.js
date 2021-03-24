@@ -123,10 +123,11 @@ export default class App extends Component {
           style={{height: 160}}
           alt="abstract art" />
         <br />
-      <p style={{color:"rgb(255, 51, 153)",fontFamily:"Avaraa",padding:"60px"}}>
+      <p style={{color:"rgb(255, 51, 153)",fontFamily:"Avaraa",paddingLeft:"90px",paddingRight:"90px"}}>
       welcome! this is a full stack chat application which facilitates communication between 2 remote users. conversation persists between page reloads. <br />
       technical info: this application is built using react. front end hosted on vercel (deployed via github), server built from scratch and hosted on heroku. psql database hosted on aws s3.
       </p>
+    <br />
     
      
 
