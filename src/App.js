@@ -129,7 +129,7 @@ export default class App extends Component {
                  fontFamily:"Avaraa",
                  paddingLeft:"90px",
                  paddingRight:"90px"}}>
-      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p> <br /><br /><br />
+      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p>
       <p style={{color:"rgb(255, 51, 153)",
                  fontFamily:"Avaraa",
                  paddingLeft:"90px",
