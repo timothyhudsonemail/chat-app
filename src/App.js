@@ -116,7 +116,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <br />
-      <h1 style={{fontFamily:Avaraa}}>
+      <h1 style={{fontFamily:"Avaraa"}}>
       chat app
       </h1>
         <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-1.png" 
