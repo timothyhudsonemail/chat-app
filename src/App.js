@@ -126,13 +126,14 @@ export default class App extends Component {
 
         <div className='flex-container'>
           <div className='flex-child'>
+      <h3 style={{fontFamily:"Avaraa"}}>user 1</h3>
            <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-2.png" 
             style={{height: 120}}
             alt="illustration of user 1" />
             <form onSubmit={this.sendMsg1}>
               <label>
                 user 1:
-                <input
+                <input style={{fontSize:200}}
                 onChange={this.msg1Handler} 
                 value={this.state.msg1} 
                 placeholder='enter msg here' />
@@ -142,6 +143,7 @@ export default class App extends Component {
           </div>
 
          <div className='flex-child'>
+            <h3 style={{fontFamily:"Avaraa"}}>user 2</h3>
             <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-3.png" 
             style={{height: 120}}
             alt="illustration of user 2" />
