@@ -9,7 +9,10 @@ font-family: "Avaraa";
 src: url("fonts/Avara-Black.otf");
 }
 
-
+@font-face {
+font-family: "Varta";
+src: url("fonts/Varta-Medium.ttf");
+}
 
 .flex-container {
   display: flex;
