@@ -127,7 +127,7 @@ export default class App extends Component {
     <div className='flex-container'>
       <div className='flex-child'>
       <p style={{color:"rgb(255, 51, 153)",
-                 fontFamily:"Avaraa",
+                 fontFamily:"Varta",
                  paddingLeft:"90px",
                  paddingRight:"90px",
                   textAlign:"left"}}>
@@ -135,7 +135,7 @@ export default class App extends Component {
       </div>
       <div className='flex-child'>
       <p style={{color:"rgb(255, 51, 153)",
-                 fontFamily:"Avaraa",
+                 fontFamily:"Varta",
                  paddingLeft:"90px",
                  paddingRight:"90px",
                   textAlign:"left"}}>
@@ -188,17 +188,17 @@ export default class App extends Component {
         <div className='flex-container'>
           <div className='flex-child'>
       <br />
-            <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 1:</p>
+            <p style={{fontFamily:"Varta",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 1:</p>
           
-      <h3 style={{fontFamily:"Avaraa"}}>{this.state.msg3 ? this.state.msg3 :'Message 1 will appear here'}</h3>
+      <h3 style={{fontFamily:"Varta"}}>{this.state.msg3 ? this.state.msg3 :'Message 1 will appear here'}</h3>
      
           </div>
 
           <div className='flex-child'> 
       <br />      
-      <p style={{fontFamily:"Avaraa",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 2:</p>
+      <p style={{fontFamily:"Varta",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 2:</p>
         
-      <h3 style={{fontFamily:"Avaraa"}}>{this.state.msg4 ? this.state.msg4 : 'Message 2 will appear here'}</h3>
+      <h3 style={{fontFamily:"Varta"}}>{this.state.msg4 ? this.state.msg4 : 'Message 2 will appear here'}</h3>
       
           </div>
         </div>
