@@ -126,7 +126,7 @@ export default class App extends Component {
       <br />
     <div className='flex-container'>
       <div className='flex-child'>
-      <p style={{color:"rgb(255, 51, 153)",
+      <p style={{color:"black",
                  fontFamily:"Varta",
                  paddingLeft:"90px",
                  paddingRight:"90px",
@@ -134,7 +134,7 @@ export default class App extends Component {
       Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p>
       </div>
       <div className='flex-child'>
-      <p style={{color:"rgb(255, 51, 153)",
+      <p style={{color:"black",
                  fontFamily:"Varta",
                  paddingLeft:"90px",
                  paddingRight:"90px",
@@ -188,7 +188,7 @@ export default class App extends Component {
         <div className='flex-container'>
           <div className='flex-child'>
       <br />
-            <p style={{fontFamily:"Varta",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 1:</p>
+            <p style={{fontFamily:"Varta",color:"black",paddingBottom:"20px"}}>Message from User 1:</p>
           
       <h3 style={{fontFamily:"Varta"}}>{this.state.msg3 ? this.state.msg3 :'Message 1 will appear here'}</h3>
      
@@ -196,7 +196,7 @@ export default class App extends Component {
 
           <div className='flex-child'> 
       <br />      
-      <p style={{fontFamily:"Varta",color:"rgb(255, 51, 153)",paddingBottom:"20px"}}>Message from User 2:</p>
+      <p style={{fontFamily:"Varta",color:"black",paddingBottom:"20px"}}>Message from User 2:</p>
         
       <h3 style={{fontFamily:"Varta"}}>{this.state.msg4 ? this.state.msg4 : 'Message 2 will appear here'}</h3>
       
