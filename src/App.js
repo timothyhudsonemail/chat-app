@@ -116,8 +116,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <br />
-      <h1 style={{fontFamily:"Avaraa"}}>
-      chat app
+      <h1 style={{fontFamily:"Varta"}}>
+      Chat Study
       </h1>
         <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-1.png" 
           style={{height: 160}}
@@ -149,7 +149,7 @@ export default class App extends Component {
 
         <div className='flex-container'>
           <div className='flex-child'>
-      <h3 style={{fontFamily:"Avaraa"}}>User 1</h3>
+      <h3 style={{fontFamily:"Varta"}}>User 1</h3>
            <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-2.png" 
             style={{height: 120}}
             alt="illustration of user 1" />
@@ -167,7 +167,7 @@ export default class App extends Component {
           </div>
 
          <div className='flex-child'>
-            <h3 style={{fontFamily:"Avaraa"}}>User 2</h3>
+            <h3 style={{fontFamily:"Varta"}}>User 2</h3>
             <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-3.png" 
             style={{height: 120}}
             alt="illustration of user 2" />
