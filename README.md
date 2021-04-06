@@ -4,7 +4,7 @@ This project is a full stack chat application consisting of a client (this repos
 
 ## Live Deployment
 
-The application can be visited here: https://chat-app.timothyhudsonemail.vercel.app/
+The application can be visited here: https://chat-app-v2.vercel.app/
 
 ## Notes
 
