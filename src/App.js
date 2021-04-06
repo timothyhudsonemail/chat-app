@@ -10,6 +10,7 @@ export default class App extends Component {
       msg2:'',
       msg3:'',
       msg4:'',
+      chosenSection:false,
     }
   }
 
@@ -111,99 +112,126 @@ export default class App extends Component {
   msg2Handler = (event) => {
     this.setState({msg2: event.target.value})
   }
+
+  navButtons = () => {
+    if(this.state.chosenSection === false)
+    {this.setState({chosenSection: true})}
+    else{
+      this.setState({chosenSection: false})
+    }
+  }
   
   render() {
     return (
       <div className="App">
-        <br />
       <h1 style={{fontFamily:"Varta"}}>
       Chat Study
-      </h1>
-        <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-1.png" 
-          style={{height: 160}}
-          alt="abstract art" />
-        <br />
-      <br />
-    <div className='flex-container'>
-      <div className='flex-child'>
-      <p style={{color:"black",
-                 fontFamily:"Varta",
-                 paddingLeft:"90px",
-                 paddingRight:"90px",
-                  textAlign:"left"}}>
-      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p>
-      </div>
-      <div className='flex-child'>
-      <p style={{color:"black",
-                 fontFamily:"Varta",
-                 paddingLeft:"90px",
-                 paddingRight:"90px",
-                  textAlign:"left"}}>
-      Technical info: This application is built using React. Front end hosted on Vercel (deployed via github), server built from scratch and hosted on Heroku. PSQL database hosted on aws s3.
-      </p>
-    </div>
-   </div>
-    <br />
-    
-     
+      </h1>  
 
-        <div className='flex-container'>
-          <div className='flex-child'>
-      <h3 style={{fontFamily:"Varta"}}>User 1</h3>
-           <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-2.png" 
-            style={{height: 120}}
-            alt="illustration of user 1" />
-            <form 
-      onSubmit={this.sendMsg1}>
-              <label>
-                
+
+      <div style={{display:"flex",
+                    flexDirection:"row", 
+                    justifyContent:"center", 
+                    height:"40px"}}>
+          
+          <div className={this.state.chosenSection ? "p-container" : "selected p-container"}
+               onClick={this.navButtons}>
+          <p>App</p>
+          </div>
+          
+          <div className={this.state.chosenSection ? "selected p-container" : "p-container"}
+               onClick={this.navButtons}>
+          <p>
+          About</p>
+          </div>
+        </div> 
+
+
+
+      <br />
+    
+      <div className="app-section" 
+           style={{display:this.state.chosenSection ? 'none' : 'block' }}>
+      <div className='flex-container'>
+        <div className='flex-child'>
+          <h3 style={{fontFamily:"Varta"}}>User 1</h3>
+            <form onSubmit={this.sendMsg1}>
+              <label>  
                 <input
                 onChange={this.msg1Handler} 
                 value={this.state.msg1} 
-                placeholder='enter message here' />
+                placeholder='Enter message here' />
               </label>
-              <input type="submit" value="Send" />
+                <input type="submit" 
+                       value="Send" />
             </form>
-          </div>
-
-         <div className='flex-child'>
-            <h3 style={{fontFamily:"Varta"}}>User 2</h3>
-            <img src="https://bunnyland-proto.s3.us-east-2.amazonaws.com/Untitled-3.png" 
-            style={{height: 120}}
-            alt="illustration of user 2" />
-            <form 
-      onSubmit={this.sendMsg2}>
-              <label>
-                
-                <input
-                onChange={this.msg2Handler} 
-                value={this.state.msg2} 
-                placeholder='enter message here' />
-              </label>
-              <input type="submit" value="Send" />
-            </form>
-          </div>
         </div>
 
-        <div className='flex-container'>
-          <div className='flex-child'>
-      <br />
-            <p style={{fontFamily:"Varta",color:"black",paddingBottom:"20px"}}>Message from User 1:</p>
-          
-      <h3 style={{fontFamily:"Varta"}}>{this.state.msg3 ? this.state.msg3 :'Message 1 will appear here'}</h3>
-     
-          </div>
-
-          <div className='flex-child'> 
-      <br />      
-      <p style={{fontFamily:"Varta",color:"black",paddingBottom:"20px"}}>Message from User 2:</p>
+        <div className='flex-child'>
+          <h3 style={{fontFamily:"Varta"}}>User 2</h3>
+            <form onSubmit={this.sendMsg2}>
+              <label>  
+                <input onChange={this.msg2Handler} 
+                       value={this.state.msg2} 
+                       placeholder='Enter message here' />
+              </label>
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+      </div>
         
-      <h3 style={{fontFamily:"Varta"}}>{this.state.msg4 ? this.state.msg4 : 'Message 2 will appear here'}</h3>
+
+      <div className='flex-container'>
+        <div className='flex-child'>
+          <br />
+            <p style={{fontFamily:"Varta",
+                      color:"black",
+                      paddingBottom:"20px"}}>Message from User 1:</p>
+            
+            <h3 style={{fontFamily:"Varta"}}>{this.state.msg3 ? this.state.msg3 :''}</h3>
       
-          </div>
         </div>
+
+        <div className='flex-child'> 
+          <br />      
+            <p style={{fontFamily:"Varta",
+                       color:"black",
+                       paddingBottom:"20px"}}>Message from User 2:</p>
+        
+            <h3 style={{fontFamily:"Varta"}}>{this.state.msg4 ? this.state.msg4 : ''}</h3>
+      
+        </div>
+      </div>
+      
       <div style={{paddingBottom:"200px"}}>
-        </div>
+      </div>
+    </div>
+
+
+    <div className="about-section" 
+         style={{display:this.state.chosenSection ? 'block' : 'none' }}>
+    <div className='flex-container about-style'>
+      <div className='flex-child p-style'>
+      <p style={{color:"black",
+                 fontFamily:"Varta",
+                 
+                  textAlign:"left"}}>
+      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p>
+      </div>
+      <div className='flex-child p-style'>
+      <p style={{color:"black",
+                 fontFamily:"Varta",
+                 
+                  textAlign:"left"}}>
+      This application is built using React. The front end is hosted on Vercel/Github, the server is built from scratch and hosted on Heroku, and a handmade PSQL database stores conversation info.
+      </p>
+    </div>
+   </div>
+   </div>
+
+
+
+
       </div>
       );
   }
