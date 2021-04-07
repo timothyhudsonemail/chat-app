@@ -19,6 +19,13 @@ export default class App extends Component {
     this.autoUpdateMsg2();
   }
 
+  openMail = () => {
+    
+        window.open('mailto:?subject=Chat App Invitation!&body=Hi! Copy and paste this address to meet me in the Chat App! -> https://chat-app-v2.vercel.app/');
+        
+      
+  }
+
   sendMsg1 = (e) => {
     e.preventDefault()
     
@@ -216,7 +223,7 @@ export default class App extends Component {
                  fontFamily:"Varta",
                  
                   textAlign:"left"}}>
-      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Conversation persists between page reloads.</p>
+      Welcome! This is a full stack chat application which facilitates communication between 2 remote users. Send a link to a friend and set up a time to chat! Or open a second tab in your browser and chat with yourself :) <br></br><span style={{cursor:"pointer",color:"blue"}}onClick={this.openMail}>Click here to send link</span>.</p>
       </div>
       <div className='flex-child p-style'>
       <p style={{color:"black",
